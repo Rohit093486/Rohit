@@ -7,11 +7,12 @@ import Login from './Components/Login';
 import Registration from './Components/Registration';
 import Forget from './Components/Forget';
 import Search from './Components/Search';
-import Cart from './Components/Cart';
-import Spinner from './Components/Spinner';
 import DashBoard from './Components/DashBoard';
 import ProductForm from './Components/ProductForm';
 import { ToastContainer, toast } from 'react-toastify';
+import CakeDetails from './Components/CakeDetails';
+import Details from './Components/Details';
+import  Cart from "./Components/Cart";
 
 
 function App() {
@@ -26,10 +27,13 @@ function App() {
           <Route path='/login' exact component={Login} />
           <Route path='/registration' exact component={Registration} />
           <Route path='/forget' exact component={Forget} />
-          <Route path='/search' exact component={Search} />
-          {/* <Route path='/cart' exact component={Cart} /> */}
+          <Route path='/search' exact component={Search} />     
           <Route path='/dash' exact component={DashBoard} />
           <Route path='/productForm' exact component={ProductForm} />
+          <Route exact path="/cakedetails/:id" exact component={CakeDetails} />
+          <Route exact path="/details/:id" component={Details} />
+          <Route exact path="/cart" component={Cart} />
+          
           
         </div>
       </BrowserRouter>
