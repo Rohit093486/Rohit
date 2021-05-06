@@ -29,14 +29,10 @@ function DashBoard() {
 )
   }, [])
 
-  // function cake() {
-  //   allCakes.sort((a,b) => {
-  //     console.log(a.price - b.price);
-  //    })
-  // }
+  
   let onbuton = () => {
     let bun = allCakes.sort((a, b) => {
-           return (a.price-b.price)
+      return (a.price - b.price)      
     })
     console.log(bun);
    }
@@ -48,10 +44,10 @@ function DashBoard() {
       <div >
       <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 fixed-top" style={{top:"50px", backgroundColor:"#F7F2F2",zIndex:10}}>
           <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h1 class="h2">Dashboard</h1>
+            <h3 class="h2"  style={{color:"tomato" , fontFamily:"-moz-initial"}}>Dashboard</h3>
             <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group mr-2">
-                <button class="btn btn-sm btn-outline-secondary" onClick={onbuton}>Sort</button>
+                <Link to="/dash"><button class="btn btn-sm btn-outline-secondary" onClick={onbuton}>Sort</button></Link>
                 <button class="btn btn-sm btn-outline-secondary">Filter</button>
               </div>  
               <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
@@ -62,7 +58,7 @@ function DashBoard() {
           </div>         
           <div class="table-responsive">
             <table class="table table-striped table-sm">
-              <thead >
+              <thead  style={{color:"tomato", fontFamily:"-moz-initial"}}>
                 <tr >
                   <th>ID</th>
                   <th>Image</th>

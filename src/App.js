@@ -27,7 +27,7 @@ function App() {
           <Route path='/registration' exact component={Registration} />
           <Route path='/forget' exact component={Forget} />
           <Route path='/search' exact component={Search} />
-          <Route path='/cart' exact component={Cart} />
+          {/* <Route path='/cart' exact component={Cart} /> */}
           <Route path='/dash' exact component={DashBoard} />
           <Route path='/productForm' exact component={ProductForm} />
           

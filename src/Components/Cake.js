@@ -27,6 +27,7 @@ class Cake extends Component {
                       cakes: this.Cakeitem   
                   })
                   this.props.history.push('/cart');
+
               }
               
               console.log(this.state.cakes);        
@@ -44,9 +45,9 @@ class Cake extends Component {
         <div class="card" style={{width: "15rem",height:"27em", margin:"1rem"}}>
         <img style={{height:"15em"}} src={this.props.cakedata.image} class="card-img-top" alt="..."></img>
         <div class="card-body">
-                <h5 class="card-title">{this.props.cakedata.name}</h5>                
-                <p class="card-text">Rs{this.props.cakedata.price}</p>                
-          <a href="#" class="btn btn-primary" onClick={this.cart}>ADD TO CART</a>
+                <h5 class="card-title" style={{fontFamily:"-moz-initial"}}>{this.props.cakedata.name}</h5>                
+                <p class="card-text"  style={{fontFamily:"-moz-initial"}}>Rs{this.props.cakedata.price}</p>                
+          <a href="#" class="btn btn-primary"  style={{fontFamily:"-moz-initial"}} onClick={this.cart}>ADD TO CART</a>
         </div>
                 </div>
                 <div>

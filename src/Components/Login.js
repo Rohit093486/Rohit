@@ -101,7 +101,7 @@ class Login extends Component {
     render() {
         return (
             <div>
-                <form style={{ padding: "6.5em 20em", backgroundColor: "#E3D9DB " ,marginTop:"4em"}}>
+                <form style={{ padding: "7.7em 20em", backgroundColor: "#E3D9DB " ,marginTop:"4em"}}>
                     <h3 style={{ color: "red" }}>Login</h3>
                     <div class="form-group">
                         <label for="exampleInputEmail1">EMAIL ADDRESS</label>

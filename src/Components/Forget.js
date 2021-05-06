@@ -36,7 +36,7 @@ class Forget extends Component {
         console.log("hello", this.userDetail);
         // if (this.vaild()) {
           axios({
-            method: "post",
+            method:"post",
             url: "https://apifromashu.herokuapp.com/api/recoverpassword",
             data: this.userDetail
           }).then((res) => {
@@ -54,7 +54,7 @@ class Forget extends Component {
         return (
             <div>  
             <div>
-           <form style={{ padding: "9.5em 20em",backgroundColor:"#DEECDC" ,marginTop:"4em"}}>
+           <form style={{ padding: "10.9em 20em",backgroundColor:"#DEECDC" ,marginTop:"4em"}}>
            <h3 style={{ color: "red" }}>FORGOTTEN PAGE</h3>
                         
             <div class="form-group">
