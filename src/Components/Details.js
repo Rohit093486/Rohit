@@ -68,7 +68,7 @@ class Details extends Component {
                   this.registers();
                  
                 }} type="button" class="btn btn-success">Add To Cart<i class="fas fa-cart-plus"></i></button>
-                 <button type="button" class="btn btn-success" style={{marginLeft:"1em"}}>Info</button>
+                 <button type="button" class="btn btn-success" style={{marginLeft:"1em"}}>Buy</button>
                   </div>
             
                 </div>
