@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Rohit/static/css/main.fa501fad.chunk.css",
+    "main.js": "/Rohit/static/js/main.0dd4e05a.chunk.js",
+    "main.js.map": "/Rohit/static/js/main.0dd4e05a.chunk.js.map",
+    "runtime-main.js": "/Rohit/static/js/runtime-main.1c73fa45.js",
+    "runtime-main.js.map": "/Rohit/static/js/runtime-main.1c73fa45.js.map",
+    "static/css/2.97503911.chunk.css": "/Rohit/static/css/2.97503911.chunk.css",
+    "static/js/2.e4300b35.chunk.js": "/Rohit/static/js/2.e4300b35.chunk.js",
+    "static/js/2.e4300b35.chunk.js.map": "/Rohit/static/js/2.e4300b35.chunk.js.map",
+    "static/js/3.e20d0c26.chunk.js": "/Rohit/static/js/3.e20d0c26.chunk.js",
+    "static/js/3.e20d0c26.chunk.js.map": "/Rohit/static/js/3.e20d0c26.chunk.js.map",
+    "index.html": "/Rohit/index.html",
+    "static/css/2.97503911.chunk.css.map": "/Rohit/static/css/2.97503911.chunk.css.map",
+    "static/css/main.fa501fad.chunk.css.map": "/Rohit/static/css/main.fa501fad.chunk.css.map",
+    "static/js/2.e4300b35.chunk.js.LICENSE.txt": "/Rohit/static/js/2.e4300b35.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/Rohit/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1c73fa45.js",
+    "static/css/2.97503911.chunk.css",
+    "static/js/2.e4300b35.chunk.js",
+    "static/css/main.fa501fad.chunk.css",
+    "static/js/main.0dd4e05a.chunk.js"
+  ]
+}
