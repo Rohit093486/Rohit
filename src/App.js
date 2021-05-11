@@ -1,6 +1,6 @@
-import logo from './logo.svg';
+
 import './App.css';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Router } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import Login from './Components/Login';
@@ -12,7 +12,9 @@ import ProductForm from './Components/ProductForm';
 import { ToastContainer, toast } from 'react-toastify';
 import CakeDetails from './Components/CakeDetails';
 import Details from './Components/Details';
-import  Cart from "./Components/Cart";
+import Cart from "./Components/Cart";
+import Address from "./Components/Address";
+import CartCake from "./Components/CartCake";
 
 
 function App() {
@@ -30,14 +32,15 @@ function App() {
           <Route path='/search' exact component={Search} />     
           <Route path='/dash' exact component={DashBoard} />
           <Route path='/productForm' exact component={ProductForm} />
-          <Route exact path="/cakedetails/:id" exact component={CakeDetails} />
+          <Route exact path="/cakedetails/:id" component={CakeDetails} />
           <Route exact path="/details/:id" component={Details} />
-          <Route exact path="/cart" component={Cart} />
-          
+          <Route  path="/cart"exact component={Cart} />
+          <Route path="/address" exact component={Address} />
           
         </div>
       </BrowserRouter>
       <ToastContainer />
+      
       
     </div>
   );

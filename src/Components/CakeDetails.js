@@ -1,5 +1,4 @@
-import react from "react";
-import { Component } from "react";
+
 import Details from "./Details";
 // import Cake from "./Cake";
 import {axios} from 'axios';
@@ -13,7 +12,7 @@ function CakeDetails(props){
 
     var [cakeresult, setCakes] = useState({});
 
-    console.log("ca",cakeresult,setCakes);
+    // console.log("ca",cakeresult,setCakes);
     // var query = queryString.parse(props.location.cakes);
     // console.log( props.match.params.id);
     let qq= props.match.params.id;
@@ -24,7 +23,7 @@ function CakeDetails(props){
         // alert("hii")
         var apiurl = "https://apifromashu.herokuapp.com/api/cake/"+qq;
         // console.log("apiii",apiurl)
-        let temp = []
+        
         fetch(apiurl)
         .then(res => res.json())
         .then(
@@ -34,11 +33,10 @@ function CakeDetails(props){
        
             setCakes(response.data);
 
-            console.log("dddddddddddddddddddddd",cakeresult)
-          })
+            console.log(cakeresult)
+          })      
 
-      }, [props.match.params.id]);
-     
+      }, [props.match.params.id]);  
      
   
         return (
@@ -53,6 +51,6 @@ function CakeDetails(props){
         
         )
     }
-// import { format } from "path";
+
 
 export default CakeDetails;

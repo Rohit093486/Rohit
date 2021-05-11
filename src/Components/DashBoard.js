@@ -2,11 +2,12 @@ import { useState, useEffect } from "react";
 import Slider from "./Slider";
 import axios from "axios";
 import './Desh.css';
-import { Link } from "react-router-dom"; 
-import Desh from "./Desh";
+import { Link } from "react-router-dom";
+// import Loader from "react-loader-spinnner";
+
 
 function DashBoard() {  
-  const [allCakes, setCakes] = useState([]);
+  const [allCakes, setCakes] = useState([]); 
   // let [sortcake , setsortcake]= useState([]);
 
   useEffect(() => {
@@ -14,8 +15,7 @@ function DashBoard() {
     axios({
       method: "get",
       url:"https://apifromashu.herokuapp.com/api/allcakes"
-    }).then((response) => {
-      
+    }).then((response) => {      
      console.log(response.data);
     //  setsortcake(response.data.data)
       setCakes(response.data.data)
@@ -72,8 +72,9 @@ function DashBoard() {
         </main>     
         {         
           allCakes.map((each, index) => {
-            return (
+            return ( 
               <div>
+                {/* <div style={{width:"100%",height:"100",display:"flex",justifyContent:"center",alignItems:"center"}}><Loader type="ThreeDots" color="#2BAD60" height="100" width="100" /> </div>&& */}
                 <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4" style={{top:"200px"}}>
                         <div class="table-responsive" style={{alignItems:"center"}}>
                             <table class="table table-striped table-sm">

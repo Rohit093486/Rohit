@@ -28,9 +28,7 @@ function Search(props) {
   }, [query.q]);
 
   return (
-    <div>
-
-    
+    <div>    
     <div className="row"  style={{marginTop:"4em"}}>
       {cakeresult.map((each) => {
         return <Cake cakedata={each} />;

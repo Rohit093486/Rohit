@@ -1,13 +1,13 @@
 import { Component } from "react";
 import { Link } from "react-router-dom";
 
-
-
 class Navbar extends Component{    
-    constructor() {
-        super()
-        this.state = {
-          searchtext:undefined
+    constructor(props) {
+        super(props)
+      this.state = {
+        token: true,
+        searchtext: undefined
+          
         }
   }
   searchtext
@@ -17,11 +17,24 @@ class Navbar extends Component{
       searchtext:this.searchtext
   })
   }
+  token = localStorage.token;
+  // componentDidMount() {
+  //   if (localStorage.token) this.state.num = false;
+  //   if (!localStorage.token) this.state.num = true;
+  // }
   
-    render() {
+  // loginbutn = () => {
+  //   if (localStorage.token) this.state.num = false;
+  //   if (!localStorage.token) this.state.num = true;
+  //   console.log(this.state.num);
+  // }
+  logoutbutn = () => {
+    localStorage.removeItem("token")     
+  }
+  render() {
       return (
       <div >
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style={{backgroundColor:"#F7F2F2" ,zIndex:50}}>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style={{backgroundColor:"#F7F2F2" ,border:"ThreeDShadow 2px solid",zIndex:50}}>
             <Link to="/"><h5 style={{color:"tomato"}}>🎂My Cake</h5></Link>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -40,17 +53,16 @@ class Navbar extends Component{
                   
       </li>
               </ul>
-            <Link><button type="button" class="btn" style={{marginRight:"1em", backgroundColor:"white",fontSize:"10px" ,color:"tomato"}}><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-fill" viewBox="0 0 16 16">
+            <Link to ="/cart"><button type="button" class="btn" style={{marginRight:"1em", backgroundColor:"white",fontSize:"10px" ,color:"tomato"}}><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-fill" viewBox="0 0 16 16">
   <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5z"/>
-</svg></button></Link>
-      <Link to="/login"><button type="button" class="btn btn-outline-info">Login</button></Link>
-   
-       
-    
-  </div>
-</nav> 
-      </div>
+              </svg></button></Link>
               
+               {/* <button type="button" class="btn btn-outline-info">logout</button>
+               <Link to="/login"><button type="button" class="btn btn-outline-info"> login</button></Link> */}
+              {!this.token?<Link to="/login"><button type="button" class="btn btn-outline-info"> login</button></Link>:<button type="button" class="btn btn-outline-info" onClick={this.logoutbutn}>logout</button>}     
+     </div>
+</nav> 
+      </div>              
         )
     }
 }

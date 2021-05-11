@@ -3,47 +3,91 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = void 0;
-var cakes = [{
-  name: "Chochlate",
-  price: 600,
-  img: "https://i1.fnp.com/images/pr/l/v20190524153618/heart-shaped-cream-chocolate-cake-half-kg_1.jpg"
+exports.Cakes = void 0;
+var Cakes = [{
+  "name": "Chocolate Cheese Cake",
+  "price": 1300,
+  "image": "https://res.cloudinary.com/ashudev/image/upload/v1615286247/kzzsqvp1ydkrnat07zjr.jpg",
+  "cakeid": 1615286283621
 }, {
-  name: "Black Forest",
-  price: 700,
-  img: "https://blob.insity.com/images/0010692_black-forest-cake_510.jpeg"
+  "name": "Chocolate Cake",
+  "price": 400,
+  "image": "https://res.cloudinary.com/ashudev/image/upload/v1615289983/n8kysvgi6qfubufegavq.jpg",
+  "cakeid": 1615290293028
 }, {
-  name: "Lemon",
-  price: 1500,
-  img: "https://tatyanaseverydayfood.com/wp-content/uploads/2020/04/Lemon-Mousse-Cake-4.jpg"
+  "name": "Chocolava Special",
+  "price": 5000,
+  "image": "https://res.cloudinary.com/ashudev/image/upload/v1615290519/tot4h3zt8czwo8lmv7sk.jpg",
+  "cakeid": 1615290595858
 }, {
-  name: "Red Cherry",
-  price: 400,
-  img: "https://i1.fnp.com/images/pr/l/v20200707215321/red-cherry-strawberry-cake-half-kg_1.jpg"
+  "price": 800,
+  "name": "Chocolate Truffle",
+  "image": "https://res.cloudinary.com/ashudev/image/upload/v1615290706/gxduqcqyytdvsmsiczcr.jpg",
+  "cakeid": 1615290710603
 }, {
-  name: "Fresh Vanilla Cake",
-  price: 550,
-  img: "https://www.flocakes.com/wp-content/uploads/2019/11/fresh-vanilla-cake-half-kg_4.jpg"
+  "image": "https://res.cloudinary.com/ashudev/image/upload/v1615290731/wsdezq5cchpmddj4n8hd.jpg",
+  "name": "Chocolate Cake",
+  "price": 700,
+  "cakeid": 1615290773495
 }, {
-  name: "Black forest oreo",
-  price: 850,
-  img: "https://i1.fnp.com/images/pr/l/v20200207155408/black-forest-oreo-cake-2-kg-eggless_5.jpg"
+  "name": "chocolate cake",
+  "image": "https://res.cloudinary.com/ashudev/image/upload/v1615291039/t3mbcsju6gco2ctiyzcg.jpg",
+  "price": 599,
+  "cakeid": 1615291050771
 }, {
-  name: "Mild Chocolate",
-  price: 500,
-  img: "https://i.pinimg.com/originals/e5/6f/12/e56f12643d1df67206cc3e0c4e3a332b.jpg"
+  "name": "chocolate cake",
+  "image": "https://res.cloudinary.com/ashudev/image/upload/v1615291145/sn10s30rjcrpvysgnv85.jpg",
+  "price": 399,
+  "cakeid": 1615291152501
 }, {
-  name: "Butterscotch Cake",
-  price: 900,
-  img: "https://cdn.igp.com/f_auto,q_auto,t_prodm/products/p-special-butterscotch-cake-1-kg--109219-m.jpg"
+  "name": "chocolate cake",
+  "image": "https://res.cloudinary.com/ashudev/image/upload/v1615291145/sn10s30rjcrpvysgnv85.jpg",
+  "price": 399,
+  "cakeid": 1615291236063
 }, {
-  name: "Mocha Cake",
-  price: 1000,
-  img: "https://5.imimg.com/data5/RX/LS/GLADMIN-14355281/coffee-mocha-cake-500x500.png"
+  "name": "Blue Berry cheese Cake",
+  "price": 1000,
+  "image": "https://res.cloudinary.com/ashudev/image/upload/v1615291611/d6irltnfa9kknsq9pi1y.jpg",
+  "cakeid": 1615291650149
 }, {
-  name: "Pumpkin cake",
-  price: 501,
-  img: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F9%2F2013%2F12%2F06%2F200711-xl-pumpkin-cake-with-caramel-cream-cheese-frosting.jpg"
+  "image": "https://res.cloudinary.com/ashudev/image/upload/v1615291844/wkfo2qxgqvl41urnuymc.jpg",
+  "name": "Strawberry cupcake",
+  "price": 2000,
+  "cakeid": 1615291848263
+}, {
+  "image": "https://res.cloudinary.com/ashudev/image/upload/v1615292716/matnan3dnvztbpnwgylh.jpg",
+  "name": "blueberry",
+  "price": 540,
+  "cakeid": 1615292723149
+}, {
+  "name": "PineApple",
+  "price": 450,
+  "image": "https://res.cloudinary.com/ashudev/image/upload/v1615292696/gqblabftbjv6nj7zeail.jpg",
+  "cakeid": 1615292726129
+}, {
+  "image": "https://res.cloudinary.com/ashudev/image/upload/v1615293948/nvtmmgae8zbq2qdwfznc.jpg",
+  "name": "Black Forest",
+  "price": 200,
+  "cakeid": 1615293952882
+}, {
+  "name": "PineApple",
+  "price": 450,
+  "image": "https://res.cloudinary.com/ashudev/image/upload/v1615294711/iosnnenoqbno1dtg9ana.png",
+  "cakeid": 1615294727568
+}, {
+  "name": "black forest",
+  "price": 899,
+  "image": "https://res.cloudinary.com/ashudev/image/upload/v1615294654/fstgjqzauobzircprd51.jpg",
+  "cakeid": 1615294779977
+}, {
+  "name": "Cake Test",
+  "price": 1000,
+  "image": "https://res.cloudinary.com/ashudev/image/upload/v1615294766/wuov3epftwt6msakqbdz.jpg",
+  "cakeid": 1615294780078
+}, {
+  "price": 1000,
+  "name": "Red valvet",
+  "image": "https://res.cloudinary.com/ashudev/image/upload/v1615294781/yw7o6p3a0edrkydjv1bs.jpg",
+  "cakeid": 1615294790360
 }];
-var _default = cakes;
-exports["default"] = _default;
+exports.Cakes = Cakes;
