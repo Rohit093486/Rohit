@@ -54,7 +54,7 @@ export default class Address extends Component {
           {/* Addresss  */}
           
 
-          <div class="col-md-8 order-md-1" style={{top:'6em' ,paddingBottom:"1em"}}>
+          <div class="col-md-8 order-md-1" style={{top:'6em',left:"1em" ,paddingBottom:"1em"}}>
           <h2  style={{fontFamily:"cursive"}}>Billing address</h2>
           <form class="needs-validation" novalidate>
             <div class="row">
@@ -145,11 +145,7 @@ export default class Address extends Component {
               <div class="custom-control custom-radio">
                 <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required></input>
                 <label class="custom-control-label" for="debit">Debit card</label>
-              </div>
-              <div class="custom-control custom-radio">
-                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required></input>
-                <label class="custom-control-label" for="paypal">PayPal</label>
-              </div>
+              </div>              
             </div>
             <div class="row">
               <div class="col-md-6 mb-3">
